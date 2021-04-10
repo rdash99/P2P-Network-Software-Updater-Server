@@ -1,2 +1,3 @@
 pycryptodome
 p2pnetwork
+pandas
