@@ -30,5 +30,5 @@ class MainNode (Node):
     # If you need to override the NodeConection as well, you need to
     # override this method! In this method, you can initiate
     # you own NodeConnection class.
-    def create_new_connection(self, connection, id, host, port):
-        return MainNodeConnection(self, connection, id, host, port)
+    #def create_new_connection(self, connection, id, host, port):
+    #    return MainNodeConnection(self, connection, id, host, port)
