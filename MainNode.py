@@ -1,9 +1,9 @@
-from p2pnetwork.node import Node
+from node import Node
 
 class MainNode (Node):
     # Python class constructor
-    def __init__(self, host, port):
-        super(MainNode, self).__init__(host, port, None)
+    def __init__(self, host, port, id):
+        super(MainNode, self).__init__(host, port, id, None)
 
     def outbound_node_connected(self, connected_node):
         print("outbound_node_connected: " + connected_node.id)

@@ -1,9 +1,16 @@
 import sys
 import time
 import MainNode
+import socket
 
-node = MainNode.MainNode("127.0.0.1", 10001)
-node2 = MainNode.MainNode("127.0.0.1", 10002)
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+s.connect(("8.8.8.8", 80))
+ip = s.getsockname()[0]
+id = socket.gethostname()
+s.close()
+
+node = MainNode.MainNode("127.0.0.1", 10001, id)
+node2 = MainNode.MainNode("127.0.0.1", 10002, id)
 time.sleep(1)
 
 # Do not forget to start your node!
