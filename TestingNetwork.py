@@ -19,7 +19,7 @@ node.start()
 time.sleep(1)
 
 # Connect with another node, otherwise you do not create any network!
-# node.connect_with_node('127.0.0.1', 10002)
+# node.connect_with_node(client, 10002)
 time.sleep(2)
 
 # Example of sending a message to the nodes (dict).
